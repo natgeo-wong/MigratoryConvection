@@ -1,15 +1,24 @@
-name = "MovingConvection"
+name = "MigratoryConvection"
+desc = "Investigating if Mesoscale Convective Systems are Local or Migratory and how that affects our Understanding of the Shallow-to-Deep Transition of Convection"
+authors = ["Nathanael Wong <natgeo.wong@outlook.com>"]
 
 [deps]
 ARMLive = "3cf54da3-541f-4d42-bdd0-41bf6096b485"
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
 DrWatson = "634d3b9d-ee7a-5ddf-bec9-22491ea816e1"
 ERA5Reanalysis = "99c076f5-c00e-46eb-a0bd-7ba31777c146"
 LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+NASAMergedTb = "0a1892c8-8a22-4bcd-b9e2-a5b491b58d94"
 NCDatasets = "85f8d34a-cbdd-5861-8df4-14fed0d494ab"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
 
+[sources]
+ARMLive = {rev = "main", url = "https://github.com/natgeo-wong/ARMLive.jl.git"}
+ERA5Reanalysis = {rev = "main", url = "https://github.com/GeoRegionsEcosystem/ERA5Reanalysis.jl.git"}
+
 [compat]
-DrWatson = "2.19.1"
-julia = "1.12.4"
+julia = "1"
