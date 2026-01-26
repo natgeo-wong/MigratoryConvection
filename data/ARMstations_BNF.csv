@@ -1,0 +1,14 @@
+﻿ID,Name / Location,Start,End,Lon,Lat,Altitude / m,Surface Type
+M1,"Bankhead National Forest, AL, AMF3 (Main Site)",2024-10-01,N/A,-87.338177,34.342481,293,Awaiting information
+S1,"Bankhead National Forest, AL, AMF3 (Collocated Main Site) ",2024-10-01,N/A,-87.338177,34.342481,293,Awaiting information
+S2,"Bankhead National Forest, AL, AMF3 (Collocated Main Site)",2024-10-01,N/A,-87.338177,34.342481,293,Awaiting information
+S3,"Bankhead National Forest, AL, AMF3 (for CSAPR2 near Main Site)",2024-10-01,N/A,-87.133118,34.630806,180,Awaiting information
+S4,"Bankhead National Forest, AL, AMF3 (for SACR near Main Site)",2024-10-01,N/A,-87.236001,34.464279,197,Awaiting information
+S10,"Bankhead National Forest, AL, AMF3 (Tower Site)",2024-10-01,N/A,-87.35044401,34.3437276,284,Awaiting information
+S11,"Bankhead National Forest, AL, AMF3 (Collocated Tower Site)",2024-10-01,N/A,-87.35044401,34.3437276,284,Awaiting information
+S13,"Bankhead National Forest, AL, Supplemental facility for STAMP2 near Tower Site",2024-10-01,N/A,-87.35062209,34.344015,286,Awaiting information
+S14,"Bankhead National Forest, AL, Supplemental facility for STAMP3 near Tower Site",2024-10-01,N/A,-87.350858,34.343399,282,Awaiting information
+S20,"Bankhead National Forest, AL, Supplemental facility at Courtland",2024-10-01,N/A,-87.292676,34.653784,178,Awaiting information
+S30,"Bankhead National Forest, AL, Supplemental facility at Falkville",2024-10-01,N/A,-86.927905,34.384829,183,Awaiting information
+S40,"Bankhead National Forest, AL, Supplemental facility at Double Springs",2024-10-01,N/A,-87.453905,34.178796,236,Awaiting information
+U2,"ARM Aerial Facility (AAF) - Unmanned Aircraft Systems, ArcticShark",2024-07-15,N/A,NaN,NaN,NaN,Awaiting information

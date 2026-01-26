@@ -1,0 +1,74 @@
+﻿ID,Name / Location,Start,End,Lon,Lat,Altitude / m,Surface Type
+C1,"Central Facility, Lamont, OK",1993-07-01,N/A,-97.487643,36.607322,314,Rangeland (Sandy) 
+B1,"Hillsboro, KS",1994-01-01,2009-10-20,-97.300833,38.304444,448,Grass
+B4,"Vici, OK (Boundary)",1994-01-01,2010-02-17,-99.209444,36.066111,642,Grass
+B5,"Morris, OK (Boundary)",1994-01-01,2009-02-17,-95.855277,35.688055,217,Grass
+B6,"Purcell, OK (Boundary)",1994-01-01,2010-01-13,-97.522777,34.984722,349,Grass
+E1,"Larned, KS (Extended)",1995-09-05,2009-10-14,-99.316894,38.202107,631,Wheat
+E2,"Hillsboro, KS (Extended)",1996-03-07,2009-10-20,-97.300833,38.304444,448,Grass
+E3,"LeRoy, KS (Extended)",1995-12-12,2009-10-28,-95.897005,38.201005,346,Wheat and soybeans (Rotated)
+E4,"Plevna, KS (Extended)",1993-07-13,2011-09-26,-98.330075,37.954505,514,Rangeland (Ungrazed)
+E5,"Halstead, KS (Extended)",1996-06-14,2009-11-02,-97.515408,38.114719,439,Wheat
+E6,"Towanda, KS (Extended)",1995-12-21,2011-10-18,-97.020569,37.843058,403,Alfalfa
+E7,"Elk Falls, KS (Extended)",1993-10-04,2011-11-14,-96.180713,37.384272,281,Pasture
+E8,"Coldwater, KS (Extended)",1993-07-12,2009-11-10,-99.308894,37.331655,664,Rangeland (Grazed)
+E9,"Ashton, KS (Extended)",1993-07-01,2023-09-29,-97.266077,37.132002,386,Pasture
+E10,"Tyro, KS (Extended)",1995-07-21,2011-11-19,-95.784444,37.068611,248,Alfalfa
+E11,"Byron, OK (Extended)",1995-06-30,2023-09-29,-98.286393,36.881345,360,Pasture
+E12,"Pawhuska, OK (Extended)",1993-09-29,N/A,-96.428106,36.841409,331,Native Prairie
+E13,"Lamont, OK (Extended and Co-located with C1)",1993-07-20,N/A,-97.485561,36.604937,318,Pasture and Wheat
+E14,"Lamont, OK (Extended, secondary)",2001-03-21,N/A,-97.487684,36.605216,314,Pasture and Wheat
+E15,"Ringwood, OK (Extended)",1993-07-01,2023-09-29,-98.284348,36.430844,418,Pasture
+E16,"Vici, OK (Extended)",1995-06-02,2011-11-15,-99.133888,36.062777,606,Wheat
+E18,"Morris, OK (Extended)",1996-06-20,2009-11-17,-95.855277,35.688055,217,Pasture (Ungrazed)
+E19,"El Reno, OK (Extended)",1997-05-30,2011-09-23,-98.015807,35.556867,415,Pasture (Ungrazed)
+E20,"Meeker, OK (Extended)",1993-07-06,2011-11-17,-96.987757,35.56421,298,Pasture
+E21,"Okmulgee, OK (Extended)",1999-08-18,2019-05-02,-96.065558,35.618339,240,Forest
+E22,"Cordell, OK (Extended)",1993-07-04,2009-12-01,-98.977874,35.355576,464,Rangeland (Grazed)
+E24,"Cyril, OK (Extended)",1995-08-27,2009-11-14,-98.203916,34.88338,408,Wheat (Gypsum Hill)
+E25,"Seminole, OK (Extended)",1996-12-12,2002-04-09,-96.734141,35.245555,283,Pasture
+E26,"Cement, OK (Extended)",1993-07-01,2009-12-17,-98.075951,34.956919,394,Pasture
+E27,"Earlsboro, OK (Extended)",2003-05-07,2010-01-20,-96.740111,35.269222,303,Pasture
+E31,"Anthony, KS (Extended)",2011-08-01,2021-09-21,-98.362022,37.150909,412,Pasture
+E32,"Medford, OK (Extended)",2011-08-01,N/A,-97.819843,36.81927,328,Pasture
+E33,"Newkirk, OK (Extended)",2011-08-01,N/A,-97.081708,36.925423,357,"Cultivated field to south, site in grassy field"
+E34,"Maple City, KS (Extended)",2011-08-01,2023-09-29,-96.76054,37.069563,417,Pasture
+E35,"Tryon, OK (Extended)",2011-08-01,2023-09-29,-97.069615,35.861614,294,Pasture
+E36,"Marshall, OK (Extended)",2011-08-01,2023-09-29,-97.510908,36.117032,340,Pasture
+E37,"Waukomis, OK (Extended)",2011-08-01,N/A,-97.927405,36.310422,379,"Cultivated field to south, site in grass"
+E38,"Omega, OK (Extended)",2011-08-01,2021-06-07,-98.173045,35.879853,367,"Cultivated field to south, site in pasture"
+E39,"Morrison, OK (Extended)",2015-09-01,N/A,-97.069053,36.373539,279,"Cultivated field to south, site in pasture"
+E40,"Pawnee, OK (Extended)",2015-09-01,2023-09-29,-96.762027,36.319367,247,Pasture
+E41,"Peckham, OK (Extended)",2015-09-01,N/A,-97.086452,36.879561,341,"Cultivated field to south, site in grassy field"
+E42,"Lamont, OK (Extended, Shipping)",2016-07-01,2023-08-28,-97.481037,36.60135,305,Pasture
+E43,"Lamont, OK (NW stereo camera site, Extended)",2017-07-01,N/A,-97.5382,36.6371,311,Pasture
+E44,"Billings, OK (SE stereo camera site, Extended)",2017-07-01,N/A,-97.4302,36.637,310,Pasture
+E45,"Tonkawa, OK (NE stereo camera site, Extended)",2017-07-01,N/A,-97.4797,36.5499,317,Grass
+E99,"Lamont, OK (Extended for testing)",1993-07-26,1995-04-03,NaN,NaN,NaN,Awaiting information
+F1,Southern Great Plains; Gulfstream 159 Aircraft,2012-10-15,N/A,-96.00901,36.75398,215,Awaiting information
+F2,Cessna 206 Aircraft,2007-08-01,N/A,-97.10158,36.727585,303,Awaiting information
+I1,"Beaumont, KS (Intermediate)",1997-02-20,2011-03-31,-96.538,37.626,478,Rangeland
+I2,"Medicine Lodge, KS (Intermediate)",1997-03-04,2008-09-09,-98.933,37.28,616,Rangeland
+I3,"Meeker, OK (Intermediate)",1996-12-30,2009-02-17,-96.864,35.551,275,Grass
+I4,"Billings, OK (Intermediate)",2010-12-14,2023-09-29,-97.363834,36.57865,330,Cultivated Field
+I5,"Garber, OK (Intermediate)",2010-12-17,2023-09-29,-97.593936,36.491178,328,Pasture
+I6,"Deer Creek, OK (Intermediate)",2010-12-17,N/A,-97.547446,36.767569,341,Cultivated Field
+I7,"Nardin, OK (C-band radar site, Intermediate / Auxiliary)",2011-07-01,N/A,-97.449012,36.796101,327,Cultivated Field
+I8,"Tonkawa, OK (NE radar wind profiler site, Intermediate / Auxiliary)",2011-07-01,2023-09-29,-97.386319,36.708631,306,Pasture
+I9,"Billings, OK (SE radar wind profiler site, Intermediate / Auxiliary)",2011-07-01,2023-09-29,-97.421082,36.477116,291,Pasture
+I10,"Lamont, OK (NW radar wind profiler site, Intermediate / Auxiliary)",2011-07-01,2023-09-29,-97.628475,36.66557,312,Pasture (Ungrazed)
+I12,"Billings, OK (SE scanning X/Ka-band cloud radar site, Intermediate / Auxiliary)",2015-07-15,N/A,-97.421082,36.477116,NaN,Pasture
+S01,"Supplemental 1, Lamont, OK",1996-08-26,N/A,NaN,NaN,NaN,Pasture
+S02,"Supplemental 2, Lamont, OK",1996-09-08,N/A,NaN,NaN,NaN,Pasture
+S03,"Supplemental 3, Lamont, OK",1996-09-06,N/A,NaN,NaN,NaN,Pasture
+S04,"Supplemental 4, Lamont, OK",1996-09-08,N/A,NaN,NaN,NaN,Pasture
+S05,"Supplemental 5, Lamont, OK",1996-09-13,N/A,NaN,NaN,NaN,Pasture
+S06,"Supplemental 6, Chickasha, OK",1996-09-13,N/A,NaN,NaN,NaN,Pasture
+S07,"Supplemental 7, Lamont, OK",1996-09-08,N/A,NaN,NaN,NaN,Pasture
+S08,"Supplemental 8, Lamont, OK",1996-09-06,N/A,NaN,NaN,NaN,Pasture
+S3,"Blackwell/Tonkawa Airport, OK (Supplemental)",2000-02-28,2000-03-23,NaN,NaN,NaN,Pasture
+S4,"Billings, OK (Site A1 for AWAKEN) ",2022-03-21,2024-02-28,-97.404548,36.362116,329,Awaiting information
+S5,"Lucien, OK (Site A2 for AWAKEN) ",2022-03-21,2023-09-11,-97.409079,36.318198,322,Awaiting information
+S6,"Billings, OK (Site H for AWAKEN) ",2022-03-21,2024-02-28,-97.407794,36.437014,305,Awaiting information
+U2,"ARM Aerial Facility (AAF) - Unmanned Aircraft Systems, ArcticShark",2019-04-16,N/A,NaN,NaN,NaN,Awaiting information
+U3,"ARM Aerial Facility (AAF) - Unmanned Aircraft Systems, TigerShark",2021-03-30,2021-11-16,NaN,NaN,NaN,Awaiting information
