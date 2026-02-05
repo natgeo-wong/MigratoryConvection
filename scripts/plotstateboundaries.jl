@@ -6,5 +6,5 @@ fig = Figure()
 axs = Axis(fig[1,1]; aspect = DataAspect())
 
 for feature in fc
-    poly!(ax, feature.geometry; color = :transparent, strokecolor = :black, strokewidth = 0.5)
+    poly!(axs, feature.geometry; color = :transparent, strokecolor = :black, strokewidth = 0.5)
 end
