@@ -43,8 +43,8 @@ function saveDCS(
         "long_name" => "time"
     ))
 
-    ncDCS = defVar(ds,"DCS_number",Int32,("longitude","latitude","time"),attrib=attr[2])
-    ncTb  = defVar(ds,"Tb",Float32,("longitude","latitude","time"),attrib=attr[3])
+    ncDCS = defVar(ds,"DCS_number",Int32,("longitude","latitude","time"),chunksizes=(517, 401, 1),shuffle=true,deflatelevel=4,attrib=attr[2])
+    ncTb  = defVar(ds,"Tb",Float32,("longitude","latitude","time"),chunksizes=(517, 401, 1),shuffle=true,deflatelevel=4,attrib=attr[3])
 
     nclon[:]  = ggrd.lon
     nclat[:]  = ggrd.lat
