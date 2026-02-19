@@ -55,7 +55,7 @@ ncwc = defVar(ds,vname,Float64,("height","time","month"),attrib=attribs[4])
 ncin = defVar(ds,"number",Int32,("height","time","month"))
 
 ncz[:] = z
-nct[:] = collect(0 : 4 : 86400)[1:(end-1)]
+nct[:] = collect(0 : Int(86400/nt) : 86400)[1:(end-1)]
 ncwc[:,:,:] = data
 ncin[:,:,:] = cat(inum,sum(inum,dims=3),dims=3)
 
