@@ -5,22 +5,21 @@ using Dates, Statistics
 using ARMLive
 
 ads = ARMDataset(
-    stream = "sgpmicrobasekaplusC1.c1",
-    start = Date(2011), stop = Date(2021,12,31), path = datadir()
+    stream = "sgpmicrobasepi2C1.c1",
+    start = Date(1996), stop = Date(2010,12,31), path = datadir()
 )
 
-nz = 596
-nt = 21600
+nz = 512
+nt = 8640
 
-tdata = zeros(Float32,nz,nt)
 tz    = zeros(Float32,nz)
 tt    = range(0, 86400, length=nt+1); tt = tt[1:(end-1)]
 
-z = 0 : 100 : 20e5; nnz = length(z) - 1
+z = 0 : 100 : 20e3; nnz = length(z) - 1
 t = 0 : 60 : 86400; nnt = length(t) - 1
 data = zeros(nnz,nnt)
 
-vname = "liquid_water_content"
+vname = "ice_water_content"
 
 dtvec = ads.start : Day(1) : ads.stop; ndt = length(dtvec)
 attribs = Vector{Dict}(undef,4)
@@ -36,8 +35,9 @@ for idt in dtvec
         attribs[3] = Dict(ids["time"].attrib)
         attribs[4] = Dict(ids[vname].attrib)
 
-        NCDataset.load!(ids["height"].var,tz,:)
-        NCDataset.load!(ids[vname].var,tdata,:,:)
+        NCDatasets.load!(ids["height"].var,tz,:)
+        tdata = nomissing(ids[vname][:,:],0)
+        inum  = .!isnan.(nomissing(ids[vname][:,:],NaN))
 
         for it = 1 : nnt, iz = 1 : nnz
 
@@ -47,22 +47,29 @@ for idt in dtvec
             iit = (tt .>= tb) .& (tt .<= te)
             iiz = (tz .>= zb) .& (tz .<= ze)
 
-            inum  += sum(.!isnan.(nomissing(ids[vname][iiz,iit],NaN)))
-            data[iz,it] = sum(nomissing(ids[vname][iiz,iit],0)) ./ inum
+            if !iszero(sum(iit)) && !iszero(sum(iiz))
+                iit = findfirst(iit) : findlast(iit)
+                iiz = findfirst(iiz) : findlast(iiz)
+                data[iz,it] = sum(view(tdata,iiz,iit)) ./ sum(view(inum,iiz,iit))
+            else
+                data[iz,it] = NaN
+            end
 
         end
-        
+
         close(ids)
 
         fnc = joinpath(ads.path,dtstr[1:4],dtstr[5:6],"$(dtstr)000000-$vname-standardized.nc")
         ds = NCDataset(fnc,"c",attrib=attribs[1])
 
-        defDim(ds,"height",nnz+1)
-        defDim(ds,"time",  nnt+1)
+        defDim(ds,"height",nnz)
+        defDim(ds,"time",  nnt)
+        defDim(ds,"height_bounds",nnz+1)
+        defDim(ds,"time_bounds",  nnt+1)
 
-        ncz  = defVar(ds,"height_bounds",Float32,("height",),attrib=attribs[2])
-        nct  = defVar(ds,"time_bounds",Int32,("time",),attrib=attribs[3])
-        ncwc = defVar(ds,vname,Float64,("height","time","month"),attrib=attribs[4])
+        ncz  = defVar(ds,"height_bounds",Float32,("height_bounds",),attrib=attribs[2])
+        nct  = defVar(ds,"time_bounds",Int32,("time_bounds",),attrib=attribs[3])
+        ncwc = defVar(ds,vname,Float64,("height","time"),attrib=attribs[4])
 
         ncz[:] = collect(z)
         nct[:] = collect(t)
