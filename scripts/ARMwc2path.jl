@@ -23,9 +23,9 @@ attribs = Vector{Dict}(undef,2)
 
 wpath = zeros(nt,ndt)
 
-for idt in dtvec
+for idt in 1 : ndt
 
-    ids = read(ads,"$(vname)_content",idt,throw=false)
+    ids = read(ads,"$(vname)_content",dtvec[idt],throw=false)
     if !isnothing(ids)
         attribs[1] = Dict(ids.attrib)
         attribs[2] = Dict(ids["$(vname)_content"].attrib)
@@ -36,7 +36,7 @@ for idt in dtvec
 
         for it = 1 : nt
 
-            wpath[it, idt] = trapz(iz, collect(0,view(tdata, :, it)))
+            wpath[it, idt] = trapz(tz, vcat(0,view(tdata, :, it)))
 
         end
 
@@ -51,16 +51,15 @@ isfile(fnc) ? rm(fnc,force=true) : nothing
 ds = NCDataset(fnc,"c",attrib=attribs[1])
 
 defDim(ds,"time",  nt*ndt)
-defDim(ds,"time_bounds",  nt*ndt+1)
 
-nct  = defVar(ds,"time_bounds",Int32,("time_bounds",),attrib=Dict(
+nct  = defVar(ds,"time",Int32,("time",),attrib=Dict(
     "units"     => "hours since $(ads.start) 00:00:00.0",
     "long_name" => "time",
     "calendar"  => "gregorian",
 ))
-ncwc = defVar(ds,"$(vname)_path",Float64,("time"),attrib=attribs[2])
+ncwc = defVar(ds,"$(vname)_path",Float64,("time",),attrib=attribs[2])
 
-nct[:] = collect(0 : 86400/nt : (86400*ndt))
+nct[:] = collect(0 : 86400/nt : (86400*ndt))[1:(end-1)]
 ncwc[:] = wpath[:]
 
 close(ds)
